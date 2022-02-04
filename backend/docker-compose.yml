@@ -1,0 +1,32 @@
+version: '3.7'
+
+services:
+  server:
+    build:
+      context: ./
+      target: production-build-stage
+      dockerfile: Dockerfile
+    image: invoice-api:v1
+    container_name: invoice-api
+    ports:
+      - '${APP_PORT}:${APP_PORT}'
+    environment:
+      - PM2_PUBLIC_KEY=${PM2_PUBLIC_KEY}
+      - PM2_SECRET_KEY=${PM2_SECRET_KEY}
+    volumes:
+      - ./:/backend
+      - /backend/node_modules
+    restart: 'unless-stopped'
+    networks:
+      - api-network
+
+networks:
+  api-network:
+    name: invoice-network
+    driver: bridge
+
+volumes:
+  api-data:
+    name: invoice-data
+    driver: local
+

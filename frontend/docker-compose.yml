@@ -1,0 +1,28 @@
+version: '3.7'
+
+services:
+  server:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: invoice-client:v1
+    container_name: invoice-client
+    ports:
+      - '8080:8080'
+    volumes:
+      - ./:/frontend
+      - /frontend/node_modules
+    restart: 'unless-stopped'
+    networks:
+      - client-network
+
+networks:
+  client-network:
+    name: invoice-network
+    driver: bridge
+
+volumes:
+  api-data:
+    name: invoice-data
+    driver: local
+
