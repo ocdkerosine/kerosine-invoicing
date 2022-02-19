@@ -288,7 +288,7 @@
               <div class="added-project-qty">{{ item.quantity }}</div>
               <div class="added-project-price">{{ item.price }}</div>
               <div class="added-project-total">
-                <span class="price-symbol">&#8378;</span>{{ item.total }}
+                <span class="price-symbol">&#8358;</span>{{ item.total }}
               </div>
               <div class="">
                 <svg
@@ -357,7 +357,7 @@
             <div class="input-item" id="project-total">
               <label for="total"> Total </label>
               <div id="total">
-                <span class="price-symbol">&#8378;</span>{{ projectItemTotal }}
+                <span class="price-symbol">&#8358;</span>{{ projectItemTotal }}
               </div>
             </div>
           </div>

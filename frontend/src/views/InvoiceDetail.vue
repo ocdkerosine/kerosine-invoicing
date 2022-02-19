@@ -91,17 +91,17 @@
           <p class="prj-text">{{ item.name }}</p>
           <p class="prj-text">{{ item.quantity }}</p>
           <p class="prj-text">
-            &#8378; {{ item.price.toLocaleString("en-US") }}
+            &#8358; {{ item.price.toLocaleString("en-US") }}
           </p>
           <p class="prj-text">
-            &#8378; {{ item.total.toLocaleString("en-US") }}
+            &#8358; {{ item.total.toLocaleString("en-US") }}
           </p>
         </div>
       </div>
       <div class="amount">
         <p class="amount-text">Total Amount</p>
         <p class="amount-number">
-          &#8378; {{ invoice.totalPrice.toLocaleString("en-US") }}
+          &#8358; {{ invoice.totalPrice.toLocaleString("en-US") }}
         </p>
       </div>
     </div>

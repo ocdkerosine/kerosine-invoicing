@@ -4,7 +4,7 @@
     <p class="due">Due: {{ invoiceItem.invoiceDue }}</p>
     <p class="name">{{ invoiceItem.clientName }}</p>
     <p class="price">
-      &#8378; {{ invoiceItem.totalPrice.toLocaleString("en-US") }}
+      &#8358; {{ invoiceItem.totalPrice.toLocaleString("en-US") }}
     </p>
     <div
       class="status"
