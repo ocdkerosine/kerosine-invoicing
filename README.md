@@ -1,6 +1,6 @@
 <h2 align="center"><u>Kerosine Invoicing Application</u></h2>
 
-![Simplifiy your small business with this handy tool.](banner.webp)
+![Simplifiy your small business with this handy tool.](banner.png)
 <h4 align="center"> Simplifiy your small business with this handy tool. </h4>
 
 <p align="center">
