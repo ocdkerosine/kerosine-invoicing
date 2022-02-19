@@ -20,10 +20,11 @@ This application was created as a way to help me bill my clients for freelance w
 
 This application is also supposed to showcase my Backend Engineering and DevOp skills to those interested. It features a front end and back end client all Dockerizable and ready to deploy on Heroku and any self-managed or fully managed Docker and Kubernetes environment.
 
-### [+] Installation
+### [+] Installation ()
  - `git clone https://github.com/ocdkerosine/kerosine-invoicing.git`
  - `cd backend/ && cp .env.example .env && cd ..`
  - `docker-compose up`
+ - `(manual) cd into the directories and run npm i then run the apps`
 
 ### [+] Usage
 `visit http://localhost:3500 to use the app`

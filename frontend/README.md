@@ -6,7 +6,7 @@ The client is meant to serve as a gateway to the api functionalities as well as 
 
  You can keep track of your personal invoices with this app. You can create a new invoice, save it as a draft or as pending, mark pending invoices as paid and edit any draft or pending invoices. Also you can filter the invoices by their draft/pending/paid status.
 
-You can see the [live demo here.](https://fozoglu-vue-invoice-app.surge.sh/)
+You can see the [live demo here.](https://kerosine-invoicing.kerosinecoding.com/)
 
 This as a Full Stack Web Application with NodeJS/Expressjs server and Mongodb/Postgresql Database.
 
