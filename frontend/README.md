@@ -1,10 +1,14 @@
 # Vue Invoice App
 
-This is the solution for [Frontend Mentor Invoice App](https://www.frontendmentor.io/challenges/invoice-app-i7KaLTQjl). You can keep track of your personal invoices with this app. You can create a new invoice, save it as a draft or as pending, mark pending invoices as paid and edit any draft or pending invoices. Also you can filter the invoices by their draft/pending/paid status.
+This client is a customized template and is not meant to demonstrate my frontend abilities.
+
+The client is meant to serve as a gateway to the api functionalities as well as demonstrate how to multi-deploy.
+
+ You can keep track of your personal invoices with this app. You can create a new invoice, save it as a draft or as pending, mark pending invoices as paid and edit any draft or pending invoices. Also you can filter the invoices by their draft/pending/paid status.
 
 You can see the [live demo here.](https://fozoglu-vue-invoice-app.surge.sh/)
 
-I am planning to build this as a Full Stack Web Application by adding a NodeJS/Expressjs server and Mongodb/Postgresql Database.
+This as a Full Stack Web Application with NodeJS/Expressjs server and Mongodb/Postgresql Database.
 
 This project is built with:
 
@@ -36,14 +40,14 @@ Users should be able to:
 - Receive form validations when trying to create/edit an invoice
 - Save draft invoices, and mark pending invoices as paid
 - Filter invoices by status (draft/pending/paid)
-- Bonus: I will add Nodejs/Expressjs backend when i finish this project to make it a Full Stack Web App.
+- Focus: Nodejs/Expressjs backend.
 
 ### Links
 
-- Solution URL: [Github Link](https://github.com/fatihozoglu/vue-invoice-app)
-- Live Site URL: [Vue Invoice App](https://fozoglu-vue-invoice-app.surge.sh/)
+- Solution URL: [Github Link](https://github.com/ocdkerosine/kerosine-invoicing)
+- Live Site URL: [Vue Invoice App](https://kerosine-invoicing.kerosinecoding.com/)
 
-## My process
+## Kerosine Invoicing
 
 ### Built with
 
@@ -60,8 +64,8 @@ Users should be able to:
 
 ## Author
 
-- Portfolio - [Fatih Özoğlu](https://fatihozoglu.github.io/react-portfolio/)
-- Linkedin - [Fatih Özoğlu](https://www.linkedin.com/in/fatihozoglu/)
+- Portfolio - [Gbeminiyi 'Telo Briggs' Oshoba](https://portfolio.kerosinecoding.com/)
+- Linkedin - [Gbeminiyi 'Telo Briggs' Oshoba](https://www.linkedin.com/in/gbeminiyi/)
 
 ## Project setup
 

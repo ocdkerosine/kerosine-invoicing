@@ -6,13 +6,13 @@ services:
       dockerfile: Dockerfile
     image: invoice-client:v1
     environment:
-      PORT: 3500
+      PORT: ${FRONTEND_APP_PORT}
       PROXY_API: http://playground-web-backend:8080/
     ports:
-      - 3500:3500
+      - '${FRONTEND_APP_PORT}:${FRONTEND_APP_PORT}'
     container_name: invoice-client
     volumes:
-      - ./:/frontend
+      - ./:/app/frontend
       - /frontend/node_modules
     restart: 'unless-stopped'
     networks:
@@ -24,12 +24,12 @@ services:
       dockerfile: Dockerfile
     image: invoice-api:v1
     ports:
-      - '${APP_PORT}:${APP_PORT}'
+      - '${BACKEND_APP_PORT}:${BACKEND_APP_PORT}'
     environment:
       - PM2_PUBLIC_KEY=${PM2_PUBLIC_KEY}
       - PM2_SECRET_KEY=${PM2_SECRET_KEY}
     volumes:
-      - ./:/backend
+      - ./:/app/backend
       - /backend/node_modules
     restart: 'unless-stopped'
     networks:
