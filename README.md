@@ -1,6 +1,6 @@
 <h2 align="center"><u>Kerosine Invoicing Application</u></h2>
 
-![Simplifiy your small business with this handy tool.](images/banner.png)
+![Simplifiy your small business with this handy tool.](banner.webp)
 <h4 align="center"> Simplifiy your small business with this handy tool. </h4>
 
 <p align="center">
@@ -12,7 +12,7 @@
     <img src="https://img.shields.io/badge/Made%20In-Nigeria-green?style=flat-square">
     <img src="https://img.shields.io/badge/Written%20In-Nodejs & TypeScript-blue?style=flat-square">
 <br>
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=ocdkerosine&repo=https://github.com/ocdkerosine/kerosine-invoicing&theme=synthwave">
+    <img src="https://github-readme-stats.vercel.app/api?username=ocdkerosine&show_icons=true&theme=radical">
 </p>
 
 ### [+] Description
@@ -26,7 +26,7 @@ This application is also supposed to showcase my Backend Engineering and DevOp s
  - `docker-compose up`
 
 ### [+] Usage
-`visit http://localhost:8080 to use the app`
+`visit http://localhost:3500 to use the app`
 
 ### [+] Credits 
 <a href="https://github.com/ocdkerosine/kerosine-invoicing">ocdkerosine</a>
