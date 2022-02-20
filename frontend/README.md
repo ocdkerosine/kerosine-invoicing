@@ -1,4 +1,4 @@
-# Vue Invoice App
+# Vue Kerosine Invoicing App
 
 This client is a customized template and is not meant to demonstrate my frontend abilities.
 
@@ -45,7 +45,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github Link](https://github.com/ocdkerosine/kerosine-invoicing)
-- Live Site URL: [Vue Invoice App](https://kerosine-invoicing.kerosinecoding.com/)
+- Live Site URL: [Vue Kerosine Invoicing App](https://kerosine-invoicing.kerosinecoding.com/)
 
 ## Kerosine Invoicing
 
