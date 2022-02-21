@@ -8,13 +8,15 @@
 <br>
     <img src="https://img.shields.io/badge/Author-Gbeminiyi 'Telo Briggs' Oshoba-magenta?style=flat-square">
     <img src="https://img.shields.io/badge/Open%20Source-Yes-orange?style=flat-square">
-    <img src="https://img.shields.io/badge/Maintained-Yes-cyan?style=flat-square">
+    <img src="https://img.shields.io/badge/Maintained-No-cyan?style=flat-square">
     <img src="https://img.shields.io/badge/Made%20In-Nigeria-green?style=flat-square">
     <img src="https://img.shields.io/badge/Written%20In-Nodejs & TypeScript-blue?style=flat-square">
 <br>
     <img src="https://github-readme-stats.vercel.app/api?username=ocdkerosine&show_icons=true&theme=radical">
 </p>
 
+### [+] Deployment
+This application was deployed on Kubernetes Development Platform [Okteto](https://www.okteto.com/) via the simple command ```okteto stack deploy```
 ### [+] Description
 This application was created as a way to help me bill my clients for freelance work and have that data accessible anywhere online so that it doesnt face the same drawbacks as papers, computers and physical storage.
 

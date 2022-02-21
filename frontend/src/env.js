@@ -1,7 +1,13 @@
 import * as dotenv from 'dotenv';
 import * as path from 'path';
 
-import { getOsEnv, getOsEnvOptional, getOsPath, getOsPaths, normalizePort, toBool, toNumber } from './utils/env';
+function getOsEnv(key) {
+  if (typeof process.env[key] === 'undefined') {
+    throw new Error(`Environment variable ${key} is not set.`);
+  }
+
+  return process.env[key];
+}
 
 /**
  * Load .env file or for tests the .env.test file.
@@ -18,14 +24,7 @@ const env = {
   isProduction: process.env.NODE_ENV === 'production',
   isTest: process.env.NODE_ENV === 'test',
   isDevelopment: process.env.NODE_ENV === 'development',
-  app: {
-    name: getOsEnv('APP_NAME'),
-    host: getOsEnv('APP_HOST'),
-    scheme: getOsEnv('APP_SCHEME'),
-    routePrefix: getOsEnv('APP_ROUTE_PREFIX'),
-    port: normalizePort(process.env.PORT || getOsEnv('APP_PORT')),
-    banner: toBool(getOsEnv('APP_BANNER')),
-  }
+  apiUrl: getOsEnv('API_URL'),
 };
 
 export default env;

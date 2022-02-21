@@ -39,19 +39,19 @@ export default new Vuex.Store({
   },
   actions: {
     fetchInvoices(context) {
-      fetch(`http://localhost:3000/v2/invoices`, { method: "GET" })
+      fetch(`https://kerosine-invoice-backend-ocdkerosine.cloud.okteto.net/v2/invoices`, { method: "GET" })
         .then((response) => response.json())
         .then((data) => context.commit("SET_INVOICES", data.data));
     },
     deleteInvoice({ commit }, payload) {
-      fetch(`http://localhost:3000/v2/invoices/${payload}`, {
+      fetch(`https://kerosine-invoice-backend-ocdkerosine.cloud.okteto.net/v2/invoices/${payload}`, {
         method: "DELETE",
       })
         .then((response) => response.json())
         .then((data) => commit("DELETE_INVOICE", data.data));
     },
     markInvoice({ commit }, payload) {
-      fetch(`http://localhost:3000/v2/invoices/${payload.id}`, {
+      fetch(`https://kerosine-invoice-backend-ocdkerosine.cloud.okteto.net/v2/invoices/${payload.id}`, {
         method: "PUT",
         headers: { "Content-type": "application/json" },
         body: JSON.stringify(payload.payload),
@@ -60,7 +60,7 @@ export default new Vuex.Store({
         .then(commit("MARK_INVOICE", payload.index));
     },
     async createInvoice({ commit }, payload) {
-      const response = await fetch(`http://localhost:3000/v2/invoices`, {
+      const response = await fetch(`https://kerosine-invoice-backend-ocdkerosine.cloud.okteto.net/v2/invoices`, {
         method: "POST",
         headers: { "Content-type": "application/json" },
         body: JSON.stringify(payload.payload),
@@ -70,7 +70,7 @@ export default new Vuex.Store({
     },
     async updateInvoice({ commit }, payload) {
       const response = await fetch(
-        `http://localhost:3000/v2/invoices/${payload.id}`,
+        `https://kerosine-invoice-backend-ocdkerosine.cloud.okteto.net/v2/invoices/${payload.id}`,
         {
           method: "PUT",
           headers: { "Content-type": "application/json" },
